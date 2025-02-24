@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Online - One Day One Juz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-book-open"></i> Quran Online</h1>
+            <button id="theme-toggle"><i class="fas fa-moon"></i> Mode Gelap</button>
+        </header>
+
+        <!-- Navigasi Halaman -->
+        <nav class="navigation">
+            <button id="prev-page"><i class="fas fa-arrow-left"></i> Halaman Sebelumnya</button>
+            <span id="page-info">Halaman 1 / 604</span>
+            <button id="next-page">Halaman Berikutnya <i class="fas fa-arrow-right"></i></button>
+        </nav>
+
+        <!-- Progress Juz -->
+        <section class="juz-progress">
+            <label><i class="fas fa-chart-line"></i> One Day One Juz:</label>
+            <progress id="progress-bar" value="0" max="30"></progress>
+            <span id="progress-text">0/30</span>
+        </section>
+
+        <!-- Kontainer Ayat -->
+        <section id="quran-container">
+            <h2 id="surah-info"><i class="fas fa-book"></i> Memuat...</h2> <!-- Nama Surat & Jumlah Ayat -->
+            <p><i class="fas fa-spinner fa-spin"></i> Memuat ayat...</p>
+        </section>
+
+        <!-- Audio Player -->
+        <section class="audio-container">
+            <audio id="quran-audio" controls></audio>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
